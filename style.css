@@ -1,0 +1,96 @@
+body {
+  background-color: #dfdad4;
+}
+.login_register_form {
+  width: 680px;
+  margin: 0 auto;
+  display: flex;
+}
+.login_form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.login_title {
+  color: #fff;
+  font-size: 21px;
+  font-family: Raleway;
+  text-transform: uppercase;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.15 );
+  background-color: #3366ff;
+  padding: 40px;
+  margin: 40px 40px 40px -10px;
+  position: relative;
+}
+/*лента нижний изгиб*/
+.login_title:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 100%;
+  border-width: 5px 5px;
+  border-style: solid;
+  border-color: #2e5ce6 #2e5ce6 transparent transparent ;
+}
+/*загнутый уголок*/
+.login_title:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  border-width: 10px 10px;
+  border-style: solid;
+  border-color: #2e5ce6 #fff #fff #2e5ce6;
+}
+.register_form {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #3366ff;
+}
+.register_title {
+  color: #fff;
+  font-size: 21px;
+  font-family: Raleway;
+  text-transform: uppercase;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.15 );
+  margin: 40px 40px 35px 40px;
+}
+input {
+  font-family: Roboto;
+  font-size: 8pt;
+  color: #989898;
+  margin: 0 40px 20px 40px;
+  height: 50px;
+  width: 240px;
+  border: solid 1px #e8e8e8;
+}
+.forgot {
+  font-size: 8pt;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #989898;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+a {
+  color: #3366ff;
+  text-decoration: none;
+}
+.button {
+  border: none;
+  color: #fff;
+}
+input[value="LOGIN"] {
+  background-color: #3366ff;
+  box-shadow: 1px 1px #3061f2;
+}
+input[value="REGISTER"] {
+  background-color: #4c79ff;
+  box-shadow: 1px 1px #3061f2;
+}
+
